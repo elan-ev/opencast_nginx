@@ -6,13 +6,13 @@
   tasks:
     - name: Test that nginx redirects to https
       ansible.builtin.uri:
-        url: http://127.0.0.1/
+        url: http://{{ inventory_hostname }}/
         follow_redirects: none
         status_code: 301
 
     - name: Test that nginx acts as proxy on https
       ansible.builtin.uri:
-        url: https://127.0.0.1/
+        url: https://{{ inventory_hostname }}/
         validate_certs: false
         follow_redirects: none
         status_code: 502
@@ -30,7 +30,7 @@
 
     - name: Test extra configuration
       ansible.builtin.uri:
-        url: https://127.0.0.1/test
+        url: https://{{ inventory_hostname }}/test
         validate_certs: false
         follow_redirects: none
         status_code: 204

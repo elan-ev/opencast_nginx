@@ -43,6 +43,9 @@ The role will not modify this file if it exists.
 Additionally you can define other virtual hosts in `/etc/nginx/sites-enabled/` directory.
 They will be loaded as well.
 
+> ℹ️ You may want to disable Nginx default vhost on Debian based systems by removing the
+  `/etc/nginx/sites-enabled/default` symlink.
+
 
 Example Playbook
 ----------------
