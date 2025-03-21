@@ -11,7 +11,7 @@ Dependencies
 ------------
 
 This role uses the [community.crypto.openssl_dhparam](https://docs.ansible.com/ansible/latest/collections/community/crypto/openssl_dhparam_module.html) module
-to generate Diffie-Hellman parameters. You therefor need to have the [community.crypto collection](https://galaxy.ansible.com/community/general) installed.
+to generate Diffie-Hellman parameters. You therefor need to have the [community.crypto collection](https://galaxy.ansible.com/community/crypto) installed.
 
 Role Variables
 --------------
